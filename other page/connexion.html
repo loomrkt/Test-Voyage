@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/connexion.css">
+    <title>Hotel & Travel</title>
+</head>
+<body>
+    <div id="fond">
+        <div id="sing">
+            <div class="blur">
+                <p class="co">Connexion</p>
+                <input type="email" name="nom" id="nom" class="btn" placeholder="E-mail"><br>
+                <input type="password" name="mdp" id="mdp" class="btn" placeholder="Mot de passe">
+                <div id="remember">
+                    <input type="checkbox" name="chkb" id="chkb">
+                    <p>Se souvenir</p>
+                </div>
+                <input type="submit" value="Se connecter">
+                <a class="oublié" id="ins">S'inscire?</a>
+            </div>
+            <div class="blur no">
+                <p class="co">Inscription</p>
+                <input type="email" name="nom" id="nom1" class="btn" placeholder="Nom"><br>
+                <input type="email" name="mail" id="mail" class="btn" placeholder="E-mail"><br>
+                <input type="password" name="mdp1" id="mdp1" class="btn" placeholder="Mot de passe">
+                <input type="password" name="mdpVer" id="mdpVer" class="btn" placeholder="Mot de passe">
+                <br>
+                <input type="submit" value="S'inscrire">
+                <a class="oublié" id="conect">Se connecter</a>
+            </div>
+            <script>
+                const blu =document.getElementsByClassName('blur');
+                const ins = document.getElementById('ins');
+                const conect = document.getElementById('conect');
+                ins.addEventListener('click',()=>{
+                    blu[0].classList.add('no');
+                    blu[1].classList.remove('no');
+                });
+                conect.addEventListener('click',()=>{
+                    blu[1].classList.add('no');
+                    blu[0].classList.remove('no');
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

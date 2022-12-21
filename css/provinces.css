@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color:#D9E2EB;
+}
+#htl{
+    height: auto;
+    width: 100%;
+}
+.Gifhtl{
+    font-size: 1.5rem;
+}
+#ifhtl{
+    font-size: 0.8rem;
+}
+.ele{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+.ele .texteRT{
+    flex: 1;
+    background-color: #eff2f6;
+}
+@media screen and (max-width:768px) {
+    .Gifhtl{
+        text-align:center;
+        margin: 1rem;
+    }
+    #ifhtl{
+        text-align:center;
+        margin: 1rem;
+    }
+}
+@media screen and (min-width:540px) and (max-width:768px) {
+    .ele:nth-child(1){
+        padding-left: 3rem;
+    }
+    .ele:nth-child(2){
+        padding-right: 3rem;
+    }
+    .ele:nth-child(3){
+        padding: 0 3rem;
+    }
+}
+@media screen and (max-width:540px){
+    .ele{
+        padding:1rem 3rem;
+    }
+}
+.RSO{
+    border-radius: 50%;
+    text-align: center;
+}
+.RSO img{
+    border-radius: 3px;
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+.RSO:hover img{
+    filter: brightness(0) invert(0);
+}
+.contacte{
+    width: 20px;
+    height: auto;
+    filter: invert(1);
+}

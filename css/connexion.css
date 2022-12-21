@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#fond{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../image/fond4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width:auto;
+}
+.blur{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blur:nth-child(1).no{
+    display: none !important;
+}
+.blur:nth-child(2).no{
+    display: none !important;
+}
+.blur::before{
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    filter: opacity(0.3);
+}
+.co{
+    position: relative;
+    color: white;
+    padding: 40px 90px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.btn{
+    margin: 0 auto;
+    position: relative;
+    background-color:transparent;
+    height: 3rem;
+    width:70%;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(118, 255, 255);
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+.btn:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(0, 226, 226);
+    background:none ;
+}
+.btn::placeholder{
+    color:rgb(118, 255, 255);
+}
+.btn:focus::placeholder{
+    color:rgb(0, 226, 226);
+}
+input[type="password"]:-webkit-autofill,
+input[type="email"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill:focus
+input[type="email"]:-webkit-autofill:focus{
+    font-size: 16px;
+    transition: background-color 9999999999s 0s, color 9999999999s 0s;
+}
+#remember{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+}
+#remember p{
+    margin-left: 10px;
+}
+input[type="submit"]{
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    height: 3rem;
+    border-radius: 20px;
+    border: 2px solid rgb(118, 255, 255);
+    color: rgb(118, 255, 255);
+    background: none;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background: rgb(0, 180, 193);
+    color: white;
+    border: none;
+
+}
+.oublié{
+    position: relative;
+    color: white;
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
